@@ -16,9 +16,59 @@
       {
         "command": "decision-trees.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "tree-notes.editNote",
+        "title": "edit note",
+        "icon":{
+          "light": "resources/light/edit.svg",
+          "dark": "resources/dark/edit.svg"
+        }
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "decision-trees",
+          "title": "Decision Trees",
+          "icon": "resources/OliveTree.svg"
+        }
+      ]
+    },
+    "views":{
+      "decision-trees": [
+        {
+          "id":"tree-notes",
+          "name":"Tree Notes"
+        },
+        {
+          "id": "TODO",
+          "name": "TODO"
+        },
+        {
+          "id":"tree-flows",
+          "name":"Flows"
+        },
+        {
+          "id":"user-todo",
+          "name":"User (Approvals)"
+        },
+        {
+          "id":"AI-tree",
+          "name":"AI"
+        },
+        {
+          "id":"ai-git-flows",
+          "name":"Git Flows"
+        },
+        {
+          "id": "settings",
+          "name": "Settings"
+        }
+      ]
+    }
   },
+  
   "scripts": {
     "vscode:prepublish": "yarn run package",
     "compile": "webpack",
