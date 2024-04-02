@@ -14,15 +14,19 @@
   "contributes": {
     "commands": [
       {
-        "command": "decision-trees.helloWorld",
-        "title": "Hello World"
-      },
-      {
         "command": "tree-notes.editNote",
         "title": "edit note",
         "icon":{
           "light": "resources/light/edit.svg",
           "dark": "resources/dark/edit.svg"
+        }
+      },
+      {
+        "command": "tree-notes.refresh",
+        "title": "refresh",
+        "icon":{
+          "light": "resources/light/refresh.svg",
+          "dark": "resources/dark/refresh.svg"
         }
       }
     ],
@@ -64,6 +68,15 @@
         {
           "id": "settings",
           "name": "Settings"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "tree-notes.refresh",
+          "when": "view == tree-notes",
+          "group": "navigation"
         }
       ]
     }
